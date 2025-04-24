@@ -37,7 +37,7 @@ Metaclonotypist can be installed from its [Github](https://github.com/qimmuno/me
 
 ## Support and contributing
 
-For bug reports and enhancement requests use the [Github issue tool](http://github.com/qimmuno/metaclonotypist/issues/new), or (even better!) open a [pull request](http://github.com/qimunno/metaclonotypist/pulls) with relevant changes. If you have any questions don't hesitate to contact us by email (qimmuno@gmail.com) or Twitter ([@andimscience](http://twitter.com/andimscience)).
+For bug reports and enhancement requests use the [Github issue tool](http://github.com/qimmuno/metaclonotypist/issues/new), or (even better!) open a [pull request](http://github.com/qimunno/metaclonotypist/pulls) with relevant changes. If you have any questions don't hesitate to contact us by email (qimmuno@gmail.com).
 
 You can run the testsuite by running `pytest` in the top-level directory.
 """

@@ -8,7 +8,7 @@ Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclo
 pip install metaclonotypist
 ```
 
-## Citing SCEPTR
+## Citing Metaclonotypist
 Please cite our [preprint](https://doi.org/10.1101/2025.04.12.648537).
 
 ### BibTex

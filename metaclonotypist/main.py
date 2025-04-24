@@ -100,13 +100,6 @@ def hla_association(clusters, hla_table, fdr_alpha=0.1, method='fisher',
                     odds_ratio = scipy.stats.contingency.odds_ratio(
                                 np.array(table, dtype=int), kind='sample').statistic
                 elif method == 'agresti-caffo':
-                    #t = 8
-                    #proportion = (count1 + count2) / (nobs1 + nobs2)
-                    #proportion = 0.5
-                    #res = test_proportions_2indep(count1+proportion*t/2.0, nobs1+t/2.0,
-                    #                              count2+proportion*t/2.0, nobs2+t/2.0,
-                    #                      alternative='larger',
-                    #                      method='wald', compare='diff')
                     res = test_proportions_2indep(count1, nobs1,
                                                   count2, nobs2,
                                           alternative='larger',
@@ -215,7 +208,7 @@ def entropy(labels):
     return -np.sum(pi * np.log(pi))
 
 def conditional_entropies(labels_true, labels_pred):
-    """Build a contingency matrix describing the relationship between labels.
+    """Calculate conditional entropies of ground truth classes and predicted clusters.
 
     Parameters
     ----------
