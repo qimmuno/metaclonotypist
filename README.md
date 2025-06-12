@@ -59,6 +59,41 @@ metaclonotypist --tcrpath path/to/tcr.csv --hlapath path/to/hla.csv --output-dir
 
 Refer to `examples/data/` for input file format.
 
+### Advanced usage
+
+Run `metaclonotypist --help` for full usage instructions:
+
+
+<details>
+<summary>Click to view full help output</summary>
+
+```text
+usage: metaclonotypist [-h] --tcrpath TCRPATH --hlapath HLAPATH -o OUTPUT_DIR [--chain {alpha,beta}] [--tcrdistmethod {tcrdist,sceptr}] [--mincount MINCOUNT] [--maxtcrdist MAXTCRDIST]
+                       [--clustering {leiden,multilevel}] [--hlatest {fisher,agresti-caffo}] [--mindonors MINDONORS] [--maxedits MAXEDITS] [--version]
+
+options:
+  -h, --help            show this help message and exit
+  --tcrpath TCRPATH     Path to input TCR data (CSV file)
+  --hlapath HLAPATH     Path to input HLA metadata (CSV file)
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Path to the output directory
+  --chain {alpha,beta}  chain to use (default: beta)
+  --tcrdistmethod {tcrdist,sceptr}
+                        TCR distance method (default: tcrdist)
+  --mincount MINCOUNT   Minimum count for clones (default: None, no filtering)
+  --maxtcrdist MAXTCRDIST
+                        Maximum TCR distance (default: 15)
+  --clustering {leiden,multilevel}
+                        Clustering algorithm (default: leiden)
+  --hlatest {fisher,agresti-caffo}
+                        Statistical test method for HLA association (default: fisher)
+  --mindonors MINDONORS
+                        Minimum number of donors for HLA filtering (default: 4)
+  --maxedits MAXEDITS   Maximum edits for TCR distance (default: 2)
+  --version             Show the version of Metaclonotypist
+```
+</details> 
+
 ## Citing Metaclonotypist
 Please cite our [preprint](https://doi.org/10.1101/2025.04.12.648537).
 
