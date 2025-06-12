@@ -8,8 +8,8 @@ Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclo
 ## Features
 
 - Automated identification of T cell metaclones from repertoire sequencing data
-- HLA-association analysis with statistical testing
-- Modular, reproducible pipeline that combines speed with accuracy
+- HLA-association analysis with robust false discovery rate control
+- A highly modular pipeline combining speed with accuracy, achieved respectively by combining the [symdel algorithm](https://arxiv.org/abs/2403.09010))  with advanced [TCR similarity metrics](https://doi.org/10.1016/j.cels.2024.12.006) and clustering algorithms.
 
 ## Requirements
 
