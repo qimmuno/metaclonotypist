@@ -136,7 +136,7 @@ def script():
     sig_clusters = sig_clusters.merge(hla_metaclones, on='cluster')
     hla_match = [hlas.loc[row['Sample.ID']][row['hla']] for ind, row in sig_clusters.iterrows()]
     sig_clusters = sig_clusters.iloc[hla_match]
-    sig_clusters.to_csv(f'{outputdir}/clustering_{params_str}.csv', index=False)
+    sig_clusters[['index', 'cluster']].drop_duplicates('index').to_csv(f'{outputdir}/clustering_{params_str}.csv', index=False)
 
 
     # shuffle hlas
@@ -168,8 +168,9 @@ def script():
             ['id_fraction_shuffled', len(sig_clusters_shuffled['Sample.ID'].unique())/len(df['Sample.ID'].unique())],
            ]
     index, values = list(zip(*data))
-    pd.Series(index=index, data=values, name='results').to_csv(f'{outputdir}/stats_{params_str}.csv', index=True)
-
+    pd.Series(index=index, data=values, name='value').rename_axis("parameter").to_csv(
+        f'{outputdir}/stats_{params_str}.csv', index=True)
+    
     print('Starting plotting')
 
     cluster_association.replace(np.inf, 200, inplace=True)
