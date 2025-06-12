@@ -1,12 +1,58 @@
 # Metaclonotypist
 
-Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclones. It is a lightweight Python library built on top of [pyrepseq](github.com/andim/pyrepseq), which provides most of the basic functionality.
+Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclones. It is powered by the [pyrepseq](github.com/andim/pyrepseq) package for repertoire sequencing analysis.
+
+## Features
+
+- Automated identification of T cell metaclones from repertoire sequencing data
+- HLA-association analysis with statistical testing
+- Modular, reproducible pipeline that combines speed with accuracy
+
+## Requirements
+
+- Python 3.8 or later
+- Install dependencies via pip (see `pyproject.toml`)
 
 ## Installation
 
 ```bash
 pip install metaclonotypist
 ```
+
+Note that installation might take a couple of minutes, if dependencies need to be installed.
+
+## Usage
+
+### Basic run on example data
+
+To run the CLI with example data:
+
+```bash
+git clone https://github.com/qimmuno/metaclonotypist.git
+cd metaclonotypist
+pip install -e .
+bash examples/run_cli_example.sh
+```
+
+### Outputs
+
+This will create (if successful) the following outputs in the folder `examples/out`:
+- a volcano plot of cluster-HLA associations
+- a table of significant cluster-HLA associations
+- a corresponding table reporting the TCRs associated with all identified metaclones
+- a table of summary statistics and parameter values
+
+The example data is small in size so the analysis should run in <10s. The analysis is based on a dataset (in `examples/data`) of the 30 top-most expanded clones at the site of a tuberculin-skin test from 150 individuals with associated HLA metadata.
+
+### Run on custom data
+
+To run on your own dataset:
+
+```bash
+metaclonotypist --tcrpath path/to/tcr.csv --hlapath path/to/hla.csv --output-dir my_results/
+```
+
+Refer to `examples/data/` for input file format.
 
 ## Citing Metaclonotypist
 Please cite our [preprint](https://doi.org/10.1101/2025.04.12.648537).
@@ -21,3 +67,12 @@ Please cite our [preprint](https://doi.org/10.1101/2025.04.12.648537).
 	year = {2025},
 }
 ```
+
+## License
+
+Metaclonotypist is released under the MIT License.
+
+## Contributing
+
+Contributions, bug reports, and feature requests are welcome! Please open an issue or pull request on [GitHub](https://github.com/qimmuno/metaclonotypist).
+

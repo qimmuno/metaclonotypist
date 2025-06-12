@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["metaclonotypist"]
+
+[project]
+name = "metaclonotypist"
+version = "0.1.0"
+description = "Metaclonotype discovery pipeline"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["TCR repertoire", "immunology", "clustering"]
+
+authors = [{ name = "Andreas Tiffeau-Mayer", email = "qimmuno@gmail.com" }]
+maintainers = [{ name = "Andreas Tiffeau-Mayer", email = "qimmuno@gmail.com" }]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+dependencies = ["numpy", "scipy", "pandas", "matplotlib", "pyrepseq", "statsmodels", "seaborn"]
+
+[project.urls]
+"Homepage" = "https://github.com/qimmuno/metaclonotypist"
+"Bug Reports" = "https://github.com/qimmuno/metaclonotypist/issues"
+
+[project.scripts]
+metaclonotypist = "metaclonotypist:script"
