@@ -13,8 +13,10 @@ Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclo
 
 ## Requirements
 
-- Python 3.8 or later
+- Python 3.9 or later
 - Install dependencies via pip (see `pyproject.toml`)
+- Metaclonotypist has been tested to work with pyrepseq v1.5.1, pandas v2.2.1, numpy v1.26.4, scipy v1.12.0, statsmodels v0.14.1,  matplotlib v3.8.3, seaborn v0.13.2
+- Linux or macOS recommended (Windows untested)
 
 ## Installation
 
