@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/pypi/l/metaclonotypist.svg)](https://github.com/qimmuno/metaclonotypist/blob/master/LICENSE)
+[![Latest release](https://img.shields.io/pypi/v/metaclonotypist.svg)](https://pypi.python.org/pypi/metaclonotypist)
+
 # Metaclonotypist
 
 Metaclonotypist is a flexible, modular pipeline for the discovery of TCR metaclones. It is powered by the [pyrepseq](github.com/andim/pyrepseq) package for repertoire sequencing analysis.
