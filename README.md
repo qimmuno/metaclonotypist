@@ -1,9 +1,14 @@
-[![License](https://img.shields.io/pypi/l/metaclonotypist.svg)](https://github.com/qimmuno/metaclonotypist/blob/master/LICENSE)
-[![Latest release](https://img.shields.io/pypi/v/metaclonotypist.svg)](https://pypi.python.org/pypi/metaclonotypist)
+<div align="center">
 
-# Metaclonotypist
+<img src="https://raw.githubusercontent.com/qimmuno/metaclonotypist/main/metaclonotypist.svg" width=700>
+
+[![Latest release](https://img.shields.io/pypi/v/metaclonotypist.svg)](https://pypi.python.org/pypi/metaclonotypist)
+[![License](https://img.shields.io/pypi/l/metaclonotypist.svg)](https://github.com/qimmuno/metaclonotypist/blob/master/LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-10.1101/2025.04.12.648537-pink)](https://doi.org/10.1101/2025.04.12.648537)
 
 Metaclonotypist is a modular pipeline for the discovery of TCR metaclones powered by the [pyrepseq](github.com/andim/pyrepseq) package for repertoire sequencing analysis.
+
+</div>
 
 ## Features
 
