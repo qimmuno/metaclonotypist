@@ -5,6 +5,7 @@
 [![Latest release](https://img.shields.io/pypi/v/metaclonotypist.svg)](https://pypi.python.org/pypi/metaclonotypist)
 [![License](https://img.shields.io/pypi/l/metaclonotypist.svg)](https://github.com/qimmuno/metaclonotypist/blob/master/LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.1101/2025.04.12.648537-pink)](https://doi.org/10.1101/2025.04.12.648537)
+[![Zenodo](https://zenodo.org/badge/856933772.svg)](https://doi.org/10.5281/zenodo.13760162)
 
 Metaclonotypist is a modular pipeline for the discovery of TCR metaclones powered by the [pyrepseq](github.com/andim/pyrepseq) package for repertoire sequencing analysis.
 
@@ -14,7 +15,7 @@ Metaclonotypist is a modular pipeline for the discovery of TCR metaclones powere
 
 - Automated identification of T cell metaclones from repertoire sequencing data
 - HLA-association analysis with robust false discovery rate control
-- A highly modular pipeline combining speed with accuracy. This is achieved by combining the [Symdel algorithm](https://arxiv.org/abs/2403.09010) for fast candidate identification of similar TCRs for refinement through state-of-the-art TCR similarity metrics ([TCRdist](https://doi.org/10.1038/nature22383) / [SCEPTR](https://doi.org/10.1016/j.cels.2024.12.006)) and advanced clustering algorithms.
+- A highly modular pipeline combining speed with accuracy. This is achieved by combining the [Symdel algorithm](https://arxiv.org/abs/2403.09010) for fast edit distance sequence neighbor candidate identification with refinement by more complex similarity metrics. Metaclonotypist supports([TCRdist](https://doi.org/10.1038/nature22383) as its default similarity metric, as well as (currently experimental) [SCEPTR](https://doi.org/10.1016/j.cels.2024.12.006)) filtering. Metaclonotypist also supports different graph-based clustering algorithms, including the default Leiden clustering.
 
 ## Requirements
 
