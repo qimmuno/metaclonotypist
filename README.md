@@ -72,10 +72,10 @@ This CSV file contains the results of the cluster-HLA association analysis. The 
 
 - **cluster**: Identifier for the TCR cluster (metaclone).
 - **hla**: HLA allele tested for association.
-- **count_allele**: Number of individuals with the specified HLA allele who have at least one TCR in the cluster.
-- **total_allele**: Total number of individuals with the specified HLA allele.
-- **count_other**: Number of individuals without the specified HLA allele who have at least one TCR in the cluster.
-- **total_other**: Total number of individuals without the specified HLA allele.
+- **count_cluster**: Number of individuals within the cluster that have the specified HLA allele.
+- **total_cluster**: Total number of individuals in the cluster.
+- **count_other**: Number of individuals not part of the cluster with the specified HLA allele.
+- **total_other**: Total number of individuals not part of the cluster.
 - **pvalue**: P-value from the statistical test assessing the association between the cluster and the HLA allele.
 - **odds_ratio**: Odds ratio quantifying the strength of the association between the cluster and the HLA allele.
 

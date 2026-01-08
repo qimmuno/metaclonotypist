@@ -112,7 +112,7 @@ def hla_association(clusters, hla_table, fdr_alpha=0.1, method='fisher',
             result = cid, hla, count1, nobs1, count2, nobs2, pvalue, odds_ratio
             results.append(result)
     cluster_association = pd.DataFrame(results,
-                                columns=['cluster', 'hla', 'count_allele', 'total_allele', 'count_other', 'total_other', 'pvalue', 'odds_ratio'])
+                                columns=['cluster', 'hla', 'count_cluster', 'total_cluster', 'count_other', 'total_other', 'pvalue', 'odds_ratio'])
     cluster_association['significant'] = fdrcorrection(cluster_association['pvalue'], alpha=fdr_alpha)[0]
     return cluster_association
 

@@ -7,7 +7,7 @@ packages = ["metaclonotypist"]
 
 [project]
 name = "metaclonotypist"
-version = "1.0.0"
+version = "1.0.1"
 description = "Metaclonotype discovery pipeline"
 readme = "README.md"
 requires-python = ">=3.9"
