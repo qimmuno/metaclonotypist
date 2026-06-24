@@ -37,7 +37,7 @@ def script():
                         help="Minimum count for clones (default: None, no filtering)")
 
     parser.add_argument("--maxtcrdist", type=float, default=15,
-                        help="Maximum TCR distance (default: 15)")
+                        help="Maximum TCR distance (default: 15). Recommended default when using Sceptr 0.55")
 
     parser.add_argument("--clustering", default='leiden',
                         help="Clustering algorithm (default: leiden)",

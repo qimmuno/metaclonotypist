@@ -6,7 +6,7 @@ from pyrepseq import *
 import scipy.sparse
 
 def metaclonotypist(df, chain='beta',
-                    max_edits=2, max_tcrdist=20,
+                    max_edits=2, max_tcrdist=15,
                     clustering='cc', clustering_kwargs=dict(),
                     node_label='bioidentity'):
     """Integrated pipeline for metaclonotype identification.
@@ -34,7 +34,7 @@ def metaclonotypist(df, chain='beta',
     return graph_clustering(neighbors, df[node_label], clustering=clustering, **clustering_kwargs)
 
 def metaclonotypist_sceptr(df, chain='beta',
-                    max_edits=2, max_sceptrdist=20,
+                    max_edits=2, max_sceptrdist=0.55,
                     clustering='cc', clustering_kwargs=dict(),
                     node_label='bioidentity'):
     """Integrated pipeline for metaclonotype identification.
